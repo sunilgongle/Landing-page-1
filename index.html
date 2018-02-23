@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Sample Landing Page</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Web Fonts -->
+    <link rel='stylesheet' type='text/css'
+          href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/one.style.css">
+    <link rel="stylesheet" href="css/blocks.css">
+
+    <!-- CSS Footer -->
+    <link rel="stylesheet" href="css/footer-v7.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="css/settings.css" type="text/css" media="screen">
+
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="css/one.dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <style>
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Center website */
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 10px -16px;
+        }
+
+        /* Add padding BETWEEN each column */
+        .row,
+        .row > .column {
+            padding: 8px;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+
+            float: left;
+            width: 33.33%;
+            display: none; /* Hide all elements by default */
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
+
+<!--=== Header ===-->
+<nav class="one-page-header navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="menu-container page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#intro" style="margin-top: -2%">
+                <img src="img/baderbrau.png" width="50%">
+                <!-- <img src="assets/img/logo1.png" alt="Logo"> -->
+            </a>
+            <i class="fa fa-shopping-cart icon-2x" style="float: right; "></i>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="menu-container">
+                <ul class="nav navbar-nav">
+                    <li class="page-scroll home">
+                        <a href="#body">Home</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#works">Works</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#products">Products</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contract">Contract</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact US</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!--=== End Header ===-->
+
+<!-- Intro Section -->
+<section id="intro" class="intro-section">
+    <div class="fullscreenbanner-container">
+        <div class="fullscreenbanner">
+            <ul>
+                <!-- SLIDE 1 -->
+                <li>
+                    <!-- MAIN IMAGE -->
+                    <img src="img/construction.jpg" alt="slidebg1" data-bgfit="cover"
+                         data-bgposition="center center" data-bgrepeat="no-repeat">
+
+                    <!-- LAYERS -->
+                    <div class="tp-caption rs-caption-1 sft start"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="100"
+                         data-speed="800"
+                         data-start="2000"
+                         data-easing="Back.easeInOut"
+                         data-endspeed="300">
+                        Provide High Quality Service
+                    </div>
+
+                    <!-- LAYER -->
+                    <div class="tp-caption rs-caption-2 sft"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="200"
+                         data-speed="1000"
+                         data-start="3000"
+                         data-easing="Power4.easeOut"
+                         data-endspeed="300"
+                         data-endeasing="Power1.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+
+                    <!-- LAYER -->
+                    <div class="tp-caption rs-caption-3 sft"
+                         data-x="center"
+                         data-hoffset="0"
+                         data-y="360"
+                         data-speed="800"
+                         data-start="3500"
+                         data-easing="Power4.easeOut"
+                         data-endspeed="300"
+                         data-endeasing="Power1.easeIn"
+                         data-captionhidden="off"
+                         style="z-index: 6">
+                        <span class="page-scroll"><a href="#about" class="btn-u btn-brd btn-brd-hover btn-u-light">Read
+                            More</a></span>
+                        <span class="page-scroll"><a href="#contract" class="btn-u btn-brd btn-brd-hover btn-u-light">CONTRACT</a></span>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="tp-bannertimer tp-bottom"></div>
+            <div class="tp-dottedoverlay twoxtwo"></div>
+        </div>
+    </div>
+</section>
+<!-- End Intro Section -->
+
+
+<!--about section-->
+<section id="about">
+    <div class="container content-lg">
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-responsive" src="img/aboutus.jpg" style="float: right" alt="">
+            </div>
+            <div class="col-md-6 ">
+                <div class="clearfix margin-bottom-30">
+                    <div class="content-boxes-in-v3" style="text-align: justify">
+                        <h2 class="heading-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore.</h2>
+                        <br>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        <br>
+
+                        <p style=" word-spacing: 30px;">01.POWERFUL 02.RESPONSIVE 03.DOCUMENTATION</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+<!--about section ends-->
+
+
+<!-- counter-->
+<section id="projects">
+    <div class="parallax-counter parallaxBg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="counters">
+                        <span class="counter">540</span>
+                        <h4>Happy Client</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="counters">
+                        <span class="counter">999</span>
+                        <h4>Projects Finished</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="counters">
+                        <span class="counter">120</span>
+                        <h4>Support Team</h4>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-xs-6">
+                    <div class="counters">
+                        <span class="counter">888</span>
+                        <h4>Cup of Coffee</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--counter ends-->
+
+
+<!-- work Section -->
+<section class="about-section">
+    <div class="container content-lg" id="works">
+        <div class="title-v1">
+            <h2>Featured <b style="color: red"> Works </b></h2>
+
+            <p>some of our furnished works</p>
+        </div>
+
+
+        <div class="cube-portfolio">
+            <div id="filters-container" class="cbp-l-filters-button">
+                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item"> All</div>
+                <div data-filter=".print" class="cbp-filter-item"> Print</div>
+                <div data-filter=".web-design" class="cbp-filter-item"> Web Design</div>
+                <div data-filter=".motion" class="cbp-filter-item"> Motion</div>
+            </div><!--/end Filters Container-->
+
+            <div id="grid-container" class="cbp-l-grid-gallery">
+                <div class="cbp-item print motion">
+                    <a class="cbp-caption cbp-singlePageInline"
+                       data-title="World Clock Widget<br>by Paul Flavius Nechita">
+                        <div>
+                            <img src="img/1.jpg" alt="">
+                        </div>
+
+                    </a>
+                </div>
+                <div class="cbp-item web-design">
+                    <a class="cbp-caption cbp-singlePageInline"
+                       data-title="Bolt UI<br>by Tiberiu Neamu">
+                        <div>
+                            <img src="img/2.jpg" alt="">
+                        </div>
+
+                    </a>
+                </div>
+                <div class="cbp-item web-design">
+                    <a class="cbp-caption cbp-singlePageInline"
+                       data-title="WhereTO App<br>by Tiberiu Neamu">
+                        <div>
+                            <img src="img/3.jpg" alt="">
+                        </div>
+
+                    </a>
+                </div>
+                <div class="cbp-item web-design print">
+                    <a h class="cbp-caption cbp-singlePageInline"
+                       data-title="iDevices<br>by Tiberiu Neamu">
+                        <div>
+                            <img src="img/11.jpg" alt="">
+                        </div>
+
+                    </a>
+                </div>
+                <div class="cbp-item motion">
+                    <a class="cbp-caption cbp-singlePageInline"
+                       data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">
+                        <div>
+                            <img src="img/5.jpg" alt="">
+                        </div>
+
+                    </a>
+                </div>
+                <div class="cbp-item print motion">
+                    <a class="cbp-caption cbp-singlePageInline"
+                       data-title="Remind~Me Widget<br>by Tiberiu Neamu">
+                        <div>
+                            <img src="img/6.jpg" alt="">
+                        </div>
+
+                    </a>
+                </div>
+                <div class="cbp-item web-design print">
+                    <a class="cbp-caption cbp-singlePageInline"
+                       data-title="Workout Buddy<br>by Tiberiu Neamu">
+                        <div>
+                            <img src="img/7.jpg" alt="">
+                        </div>
+
+                    </a>
+                </div>
+                <div class="cbp-item print">
+                    <a class="cbp-caption cbp-singlePageInline"
+                       data-title="Digital Menu<br>by Cosmin Capitanu">
+                        <div>
+                            <img src="img/8.jpg" alt="">
+                        </div>
+
+                    </a>
+                </div>
+                <div class="cbp-item motion">
+                    <a class="cbp-caption cbp-singlePageInline"
+                       data-title="Holiday Selector<br>by Cosmin Capitanu">
+                        <div>
+                            <img src="img/4.jpg" alt="">
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!-- workSection -->
+
+<!--product section-->
+<section id="products">
+    <div class="title-v1">
+        <h2>Products</h2>
+    </div>
+    <center>
+        <div id="myBtnContainer">
+            <button class="active" onclick="filterSelection('brick')"><img src="img/bricks.jpg"></button>
+            <button onclick="filterSelection('cement')"><img src="img/cement.jpg"></button>
+            <button onclick="filterSelection('paint')"><img src="img/paint.jpg"></button>
+            <button onclick="filterSelection('sand')"><img src="img/sand.jpg"></button>
+        </div>
+    </center>
+
+    <!-- Portfolio Gallery Grid -->
+    <center>
+        <div class="row container content-lg" align="center">
+            <div class="column brick">
+                <div class="content">
+                    <img src="img/brick1.jpg" alt="Mountains" style="width:100%">
+
+                </div>
+            </div>
+            <div class="column brick">
+                <div class="content">
+                    <img src="img/brick2.jpg" alt="Lights" style="width:100%">
+
+                </div>
+            </div>
+            <div class="column brick">
+                <div class="content">
+                    <img src="img/brick3.jpg" alt="Nature" style="width:100%">
+
+                </div>
+            </div>
+            <div class="column brick">
+                <div class="content">
+                    <img src="img/brick4.jpg" alt="Nature" style="width:100%">
+
+                </div>
+            </div>
+
+            <div class="column cement">
+                <div class="content">
+                    <img src="img/cement1.jpg" alt="Car" style="width:100%">
+
+                </div>
+            </div>
+            <div class="column cement">
+                <div class="content">
+                    <img src="img/cement2.jpg" alt="Car" style="width:100%">
+
+                </div>
+            </div>
+            <div class="column cement">
+                <div class="content">
+                    <img src="img/cement3.jpg" alt="Car" style="width:100%">
+
+                </div>
+            </div>
+
+            <div class="column paint">
+                <div class="content">
+                    <img src="img/paint1.jpeg" alt="Car" style="width:100%">
+
+                </div>
+            </div>
+            <div class="column paint">
+                <div class="content">
+                    <img src="img/paint2.jpg" alt="Car" style="width:100%">
+
+                </div>
+            </div>
+            <div class="column paint">
+                <div class="content">
+                    <img src="img/paint3.jpg" alt="Car" style="width:100%">
+
+                </div>
+            </div>
+
+
+            <div class="column sand">
+                <div class="content">
+                    <img src="img/sand1.jpg" alt="Car" style="width:100%">
+
+                </div>
+            </div>
+            <div class="column sand">
+                <div class="content">
+                    <img src="img/sand2.jpeg" alt="Car" style="width:100%">
+
+                </div>
+            </div>
+            <div class="column sand">
+                <div class="content">
+                    <img src="img/sand3.jpg" alt="Car" style="width:100%">
+
+                </div>
+            </div>
+        </div>
+    </center>
+
+</section>
+<!--product section ends-->
+
+<br><br>
+
+<!--contract section-->
+<div style="width: auto; ">
+    <img src="img/series-of-tower-building.jpg" class="img-responsive">
+</div>
+
+<section id="contract">
+    <div class="container content-lg">
+        <div class="row">
+
+            <div class="col-md-8 content-boxes-v3 ">
+                <div class="col-md-6 ">
+                    <i class="icon-custom icon-md rounded-x icon-bg-u icon-line"> 01</i>
+
+                    <div class="content-boxes-in-v3">
+                        <h2 class="heading-sm">Unlimited design option</h2>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum has been the industry's</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <i class="icon-custom icon-md rounded-x icon-bg-u icon-line "> 02</i>
+
+                    <div class="content-boxes-in-v3">
+                        <h2 class="heading-sm">Responsive item</h2>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum has been the industry's</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive" src="img/whychoose-us.jpg" alt="">
+            </div>
+            <div class="col-md-8 content-boxes-v3 ">
+                <div class="col-md-6 ">
+                    <i class="icon-custom icon-md rounded-x icon-bg-u icon-line "> 03</i>
+
+                    <div class="content-boxes-in-v3">
+                        <h2 class="heading-sm">Modern equipment</h2>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum has been the industry's</p>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <i class="icon-custom icon-md rounded-x icon-bg-u icon-line"> 04</i>
+
+                    <div class="content-boxes-in-v3">
+                        <h2 class="heading-sm">BSupport 24/7</h2>
+
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem
+                            Ipsum has been the industry's</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+
+        <div class="col-md-2"></div>
+        <div class=" container col-md-8" style="background-color: whitesmoke; padding: 2%">
+            <center>Lokking for a quality and affordable way to build your house try our contacts
+            <span><a style="color: orange; float: right" class="btn-u btn-brd btn-brd-hover btn-u-light">Read
+                More</a></span>
+            </center>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+</section>
+<!-- contractSection -->
+
+
+<!-- Contact Section -->
+<section id="contact" class="contacts-section">
+    <div class="container content-lg">
+
+
+        <div class="title-v1">
+            <h2>Contact Us</h2>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+                It has been the industry's standard dummy text.</p>
+        </div>
+
+        <div class="row contacts-in">
+            <div class="col-md-6 md-margin-bottom-40"
+            ">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.544442892633!2d77.62475921437485!3d12.936974990878571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1446eb5d1d19%3A0x1716a8a8c00346ac!2sSony+Signal!5e0!3m2!1sen!2sin!4v1516251059546"
+                    width="300px" height="350" frameborder="0" style="border:0; margin: 0; padding: 0;"
+                    allowfullscreen></iframe>
+
+        </div>
+
+        <div class="col-md-6">
+            <form  method="post" id="sky-form3" class="sky-form contact-style">
+                <fieldset>
+
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div>
+                                <input placeholder="Name" type="text" name="name" id="name" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <div>
+                                <input type="text" placeholder="Email" name="email" id="email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div>
+                                <input placeholder="Subect" type="text" name="name" id="name" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <div>
+                                <input type="text" placeholder="Place" name="email" id="email" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-md-12 margin-bottom-20 col-md-offset-0">
+                            <div>
+                                <textarea rows="8" placeholder="Message" name="message" id="message"
+                                          class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        <button type="submit" class="btn-u btn-brd btn-brd-hover btn-u-dark">Send Message</button>
+                    </p>
+                </fieldset>
+
+                <div class="message">
+                    <i class="rounded-x fa fa-check"></i>
+
+                    <p>Your message was successfully sent!</p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <br>
+
+    <div class="row">
+        <div class="col-md-4 ">
+            <div>
+                <font class="title-v1"><i style="color: deepskyblue" class="fa fa-map-marker icon-2x"
+                                          aria-hidden="true"></i>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</font>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div>
+                <font class="title-v1"><i style="color: deepskyblue" class="fa fa-envelope icon-2x"
+                                          aria-hidden="true"></i>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</font>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <div>
+                <font class="title-v1"><i style="color: deepskyblue" class="fa fa-phone icon-2x" aria-hidden="true"></i>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</font>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+</section>
+<!--contact section ends-->
+
+<!--footer-->
+<div style="background: white">
+    <div class="container" style="padding: 10px">
+        <div class="col-md-4">
+            <p class="" align="left">Copyright 2016 &copy; All Rights Reserved. </p>
+        </div>
+
+        <div class="col-md-4" align="center">
+            <img src="img/baderbrau.png" width="20%">
+        </div>
+        <div class="col-md-4">
+            <ul class="social-icons" align="right">
+                <li><a href="#" data-original-title="Facebook" class="social_facebook rounded-x"></a></li>
+                <li><a href="#" data-original-title="Twitter" class="social_twitter rounded-x"></a></li>
+                <li><a href="#" data-original-title="Goole Plus" class="social_googleplus rounded-x"></a></li>
+                <li><a href="#" data-original-title="Pinterest" class="social_pintrest rounded-x"></a></li>
+                <li><a href="#" data-original-title="Linkedin" class="social_linkedin rounded-x"></a></li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
+<!-- footer Section -->
+
+
+<script>
+
+
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+
+        }
+    }
+
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+            }
+        }
+    }
+
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+
+
+<style>
+
+    .contact-form {
+        list-style-type: none;
+
+    li {
+
+    div {
+        margin-bottom: 2.5em;
+    }
+
+    }
+    input,
+    textarea,
+    select {
+        width: 100%;
+        margin: 0;
+        padding-bottom: 1.4em;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-bottom: 3px solid slategrey;
+        background: black;
+        font-family: 'Roboto', sans-serif;
+        color: lightgrey;
+        font-weight: 700;
+        font-size: 18px;
+        transition: ease-in-out 0.25s;
+    }
+
+    textarea {
+        min-height: 50px;
+        max-height: 500px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        resize: vertical;
+        overflow: hidden;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 12px;
+        color: slategrey;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    label {
+        font-size: 12px;
+        color: slategrey;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus,
+    button:focus {
+        outline: none;
+        resize: none;
+        border-bottom: 3px solid #db4d57;
+    }
+
+    #slider-range-min {
+        outline: 0;
+        background: slategrey;
+        height: 3.6em;
+        border: 0;
+        border-radius: 0;
+
+    .ui-slider-range {
+        background: #db4d57;
+        border-radius: 0;
+    }
+
+    .ui-slider-handle {
+        outline: 0;
+        top: 1.1em;
+        margin-left: -.6em;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 0;
+        background: white;
+        cursor: pointer;
+    }
+
+    }
+    #amount {
+        border: 0;
+        color: lightgrey;
+        font-weight: 400;
+        font-size: 28px;
+        padding-top: 1.1em;
+        letter-spacing: 3px;
+    }
+
+    button {
+        color: lightgrey;
+        background: rgba(34, 34, 34, 0.0);
+        border: 3px solid #db4d57;
+        height: 74px;
+        width: 200px;
+        float: right;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: ease-in-out 0.25s;
+
+    span {
+        transition: ease-in-out 0.25s;
+    }
+
+    }
+    button:hover {
+        background: #db4d57;
+        color: lightgrey;
+
+    span {
+        padding-left: 10px;
+        color: white;
+    }
+
+    }
+    }
+</style>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothScroll.js"></script>
+<script src="js/pace.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/jquery.form.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.themepunch.tools.min.js"></script>
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/jquery.cubeportfolio.min.js"></script>
+
+
+<script src="js/one.app.js"></script>
+<script src="js/login.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/pace-loader.js"></script>
+<script src="js/owl-carousel.js"></script>
+<script src="js/style-switcher.js"></script>
+<script src="js/revolution-slider.js"></script>
+<script src="js/cube-portfolio-lightbox.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        App.init();
+        App.initCounter();
+        App.initParallaxBg();
+        LoginForm.initLoginForm();
+        ContactForm.initContactForm();
+        OwlCarousel.initOwlCarousel();
+        StyleSwitcher.initStyleSwitcher();
+        RevolutionSlider.initRSfullScreen();
+    });
+</script>
+
+</body>
+</html>
